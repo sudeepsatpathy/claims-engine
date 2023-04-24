@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Avatar from '../components/Avatar'
 
 // styles
 import './ClaimList.css'

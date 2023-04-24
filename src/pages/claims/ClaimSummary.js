@@ -1,21 +1,21 @@
-import { useState, useEffect } from 'react'
-import Avatar from "../../components/Avatar"
-import { useCollection } from '../../hooks/useCollection'
-import { useFirestore } from "../../hooks/useFirestore"
-import { useHistory } from 'react-router-dom'
-import { useAuthContext } from "../../hooks/useAuthContext"
-import Select from 'react-select'
+//import { useState } from 'react'
+//import Avatar from "../../components/Avatar"
+//import { useCollection } from '../../hooks/useCollection'
+//import { useFirestore } from "../../hooks/useFirestore"
+//import { useHistory } from 'react-router-dom'
+//import { useAuthContext } from "../../hooks/useAuthContext"
+//import Select from 'react-select'
 
 // styles
 import './Claim.css'
 
 export default function ClaimSummary({ claim }) {
-  const { deleteDocument } = useFirestore('claims')
-  const { updateDocument, response } = useFirestore('claims')
-  const { user } = useAuthContext()
-  const { documents } = useCollection('users')
-  const [users, setUsers] = useState([])
-  const history = useHistory()
+  //const { deleteDocument } = useFirestore('claims')
+  //const { updateDocument, response } = useFirestore('claims')
+  //const { user } = useAuthContext()
+  //const { documents } = useCollection('users')
+  //const [users, setUsers] = useState([])
+  //const history = useHistory()
 
   // const [claimName, setClaimName] = claim.claimName
   // const [claimDetails, setClaimDetails] = claim.claimDetails
@@ -40,21 +40,21 @@ export default function ClaimSummary({ claim }) {
 
   // const [formError, setFormError] = useState(null)
 
-  const handleClick = () => {
-    deleteDocument(claim.id)
-    history.push('/')
-  }
+  // const handleClick = () => {
+  //   deleteDocument(claim.id)
+  //   history.push('/')
+  // }
 
-  const handleUpdate = async (e) => {
-    e.preventDefault();
+  // const handleUpdate = async (e) => {
+  //   e.preventDefault();
 
-    await updateDocument(claim.id, {
-      claim,
-    })
-    // if (!response.error) {
-    //   setNewComment('')
-    // }
-  }
+  //   await updateDocument(claim.id, {
+  //     claim,
+  //   })
+  //   // if (!response.error) {
+  //   //   setNewComment('')
+  //   // }
+  // }
 
   return (
     <div>
