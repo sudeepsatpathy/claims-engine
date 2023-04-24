@@ -5,6 +5,7 @@
 //import { useHistory } from 'react-router-dom'
 //import { useAuthContext } from "../../hooks/useAuthContext"
 //import Select from 'react-select'
+import EditClaim from './EditClaim'
 
 // styles
 import './Claim.css'
@@ -102,7 +103,8 @@ export default function ClaimSummary({ claim }) {
         <p className="loss-date"> Adjuster's Phone: {claim.insuranceAdjusterPhone} </p>
         <p className="loss-date"> Adjuster's Email: {claim.insuranceAdjusterEmail} </p>
 
-        <button className="btn">Edit Claim</button>
+        {/* <button className="btn">Edit Claim</button> */}
+        <EditClaim claim={claim}/>
       </div>
 
 
