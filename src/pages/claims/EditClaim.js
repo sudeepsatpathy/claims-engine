@@ -60,6 +60,7 @@ function EditClaim(claim) {
     e.preventDefault();
 
     await updateDocument(claim.claim.id, updatedClaim)
+    handleClose()
     if (!response.error) {
       console.log(response.error)
     }
