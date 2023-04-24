@@ -101,6 +101,8 @@ export default function ClaimSummary({ claim }) {
         <p className="loss-date"> Adjuster's Name: {claim.insuranceAdjusterName} </p>
         <p className="loss-date"> Adjuster's Phone: {claim.insuranceAdjusterPhone} </p>
         <p className="loss-date"> Adjuster's Email: {claim.insuranceAdjusterEmail} </p>
+
+        <button className="btn">Edit Claim</button>
       </div>
 
 
